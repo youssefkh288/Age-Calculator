@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <h1>Age Calculator</h1>
+
+      <div class="mode-toggle">
+        <button id="modeDate" class="active" onclick="switchMode('date')">Pick a Date</button>
+        <button id="modeManual" onclick="switchMode('manual')">Enter Birthdate</button>
+      </div>
+
+
+      <div class="input-group" id="dateMode">
+        <label for="date">Select your birthdate:</label>
+        <input type="date" id="date" />
+      </div>
+
+ 
+      <div class="input-group hidden" id="manualMode">
+        <label for="manualInput">Enter birthdate (e.g., 10/03/1999):</label>
+        <input type="text" id="manualInput" placeholder="DD/MM/YYYY">
+      </div>
+
+      <button class="calculate-btn" onclick="calculate()">Calculate</button>
+      <div class="output" id="result"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

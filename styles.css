@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    backdrop-filter: blur(20px);
+}
+
+.card h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.mode-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.mode-toggle button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #ddd;
+    color: #222;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.mode-toggle button.active {
+    background-color: #00cec9;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.input-group input[type="date"],
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.calculate-btn {
+    background-color: #0984e3;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.calculate-btn:hover {
+    background-color: #065dbd;
+}
+
+.output {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .card {
+        padding: 2rem;
+    }
+
+    .card h1 {
+        font-size: 2rem;
+    }
+
+    .output {
+        font-size: 1rem;
+    }
+}
